@@ -1,0 +1,50 @@
+.Displays {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em 1em;
+
+  .DisplayInput {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    border-radius: 7px;
+    // margin: 1em auto;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    img {
+      // border-top-left-radius: 7px;
+      // border-top-right-radius: 7px;
+      // width: 318.48px;
+      height: 326px;
+      display: block;
+      margin: auto;
+      object-fit: contain;
+      object-position: center;
+      transition: transform 0.2s linear;
+      z-index: -1;
+
+      &:hover {
+        transform: scale(1.12);
+        cursor: pointer;
+      }
+    }
+
+    &Name {
+      width: 100%;
+      margin: auto;
+      z-index: 100;
+      border: 1px solid white;
+      position: relative;
+      background-color: white;
+
+      h2 {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 1em 0 3em 1.5em;
+      }
+    }
+  }
+}
